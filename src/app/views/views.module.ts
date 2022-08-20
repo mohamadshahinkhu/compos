@@ -3,11 +3,15 @@ import { CommonModule } from '@angular/common';
 
 import { ViewsRoutingModule } from './views-routing.module';
 import { ViewshomeComponent } from './viewshome/viewshome.component';
+import { StaticsComponent } from './statics/statics.component';
+import { ItemListComponent } from './item-list/item-list.component';
 
 
 @NgModule({
   declarations: [
-    ViewshomeComponent
+    ViewshomeComponent,
+    StaticsComponent,
+    ItemListComponent
   ],
   imports: [
     CommonModule,

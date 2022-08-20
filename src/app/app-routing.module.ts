@@ -6,7 +6,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   {path: 'elements' , loadChildren:() => import('./elements/elements.module').then(m => m.ElementsModule)},
-  {path:'collection' , loadChildren:() => import('./collection/collection.module').then(m => m.CollectionModule)}, 
+  {path:'collection' , loadChildren:() => import('./collection/collection.module').then(m => m.CollectionModule)},
+  {path:'views' , loadChildren:() => import('./views/views.module').then(m=> m.ViewsModule)} ,
   { path: 'home', component: HomeComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', redirectTo: '/not-found' },

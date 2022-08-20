@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Data } from '@angular/router';
 
 @Component({
   selector: 'app-statics',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./statics.component.css']
 })
 export class StaticsComponent implements OnInit {
+@Input()  data=[];
 
   constructor() { }
 
